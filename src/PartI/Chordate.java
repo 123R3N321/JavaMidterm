@@ -1,6 +1,5 @@
 package PartI;
 
-import PartI.Animal;
 
 /**
  * Still abstract,
