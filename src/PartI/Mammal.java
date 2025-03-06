@@ -4,7 +4,7 @@ public abstract class Mammal extends Chordate {
     private boolean warmBlood = true;
     private double gestationPeriod;
 
-    //barebone constructor reuqirements
+    //barebone constructor reuqirements excludes endortherm bool switch
     protected Mammal(String name, String scientificName, double lifeSpan, boolean isMobile, String dietType, boolean vertebrate, double nervousSystemComplexity, double gestationPeriod) {
         super(name, scientificName, lifeSpan, isMobile, dietType, vertebrate, nervousSystemComplexity);
         this.gestationPeriod = gestationPeriod;
