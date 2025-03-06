@@ -3,6 +3,8 @@ package PartI;
 /**
  * Note we revert back to non-default for
  * 'canFly' field as not all birdies fly!
+ *
+ * note: all birds have spine. Go check with prof
  */
 public abstract class Bird extends Chordate {
     private boolean canFly; //birds may or may not fly, look at kiwi and penguin!
@@ -43,7 +45,7 @@ public abstract class Bird extends Chordate {
                 ((isCanFly()) ? "it takes to the wind!" : "it unfortunately cannot fly") +
                 " and it has a wing span of " +
                 Double.toString(wingSpan) +
-                "length units.";
+                " length units.";
     }
     //end of snow-balling methods
 }
