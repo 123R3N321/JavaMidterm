@@ -10,7 +10,7 @@ package PartI;
 
 
 public class Panthera extends Felidae {
-    private double territorySize;   //wtf is this attribute
+    private double territorySize;
     private double maneSize;
 
     public Panthera(String name, String scientificName, double lifeSpan, boolean isMobile, String dietType, boolean vertebrate, double nervousSystemComplexity, double gestationPeriod, String huntingStrategy, double biteForce, boolean climbingAbility, double roarVolume, double territorySize, double maneSize) {
@@ -25,19 +25,19 @@ public class Panthera extends Felidae {
         this.maneSize = maneSize;
     }
 
-    public double getPrideSize() {
+    public double getTerritorySize() {
         return territorySize;
     }
 
-    public void setPrideSize(double territorySize) {
+    public void setTerritorySize(double territorySize) {
         this.territorySize = territorySize;
     }
 
-    public double getManeColor() {
+    public double getManeSize() {
         return maneSize;
     }
 
-    public void setManeColor(double maneSize) {
+    public void setManeSize(double maneSize) {
         this.maneSize = maneSize;
     }
 

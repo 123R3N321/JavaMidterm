@@ -9,7 +9,7 @@ package PartI;
  * notes:
  * must implement comparable to allow sorting
  */
-public abstract class Lifeform implements Comparable<Lifeform> {
+public abstract class Lifeform{
     //private all data members
     private String name;
     private String scientificName;
@@ -31,10 +31,10 @@ public abstract class Lifeform implements Comparable<Lifeform> {
 
 
     //public methods
-    //implement comparable
-    public int compareTo(Lifeform a) {
-        return Double.compare(this.lifeSpan, a.lifeSpan);
-    }
+//    //implement comparable
+//    public int compareTo(Lifeform a) {
+//        return Double.compare(this.lifeSpan, a.lifeSpan);
+//    }
 
 
     //getter-setter pairs, 6 methods in total
