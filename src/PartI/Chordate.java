@@ -8,7 +8,7 @@ package PartI;
  * vertebrate (assumed to be bool, as not all chordates have a spine)
  * nervousSystemComplexity (assumed double)
  */
-public abstract class Chordate extends Animal {
+public class Chordate extends Animal {
 
     //private
     private boolean vertebrate;
@@ -16,7 +16,7 @@ public abstract class Chordate extends Animal {
     //private ends here
 
     //protected constructor
-    protected Chordate(String name, String scientificName, double lifeSpan, boolean isMobile, String dietType, boolean vertebrate, double nervousSystemComplexity) {
+    public Chordate(String name, String scientificName, double lifeSpan, boolean isMobile, String dietType, boolean vertebrate, double nervousSystemComplexity) {
         super(name, scientificName, lifeSpan, isMobile, dietType);
         this.vertebrate = vertebrate;
         this.nervousSystemComplexity = nervousSystemComplexity;

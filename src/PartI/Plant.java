@@ -10,7 +10,7 @@ package PartI;
  * should still be abstract,
  * snow-ball describe() and getDetails()
  */
-public abstract class Plant extends Lifeform {
+public class Plant extends Lifeform {
     //private members:
     private double photosynthesisEfficiency;
     private double growthRate;    //non-specified type, string is easy.
@@ -18,7 +18,7 @@ public abstract class Plant extends Lifeform {
 
     //protected constructor, disable incomplete initialization
     //because getDetails() relies on all details being available
-    protected Plant(String name, String scientificName, double lifeSpan, double photosynthesisEfficiency, double growthRate) {
+    public Plant(String name, String scientificName, double lifeSpan, double photosynthesisEfficiency, double growthRate) {
         super(name, scientificName, lifeSpan);
         this.photosynthesisEfficiency = photosynthesisEfficiency;
         this.growthRate = growthRate;

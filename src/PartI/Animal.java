@@ -10,7 +10,7 @@ package PartI;
  * should still be abstract,
  * snow-ball describe() and getDetails()
  */
-public abstract class Animal extends Lifeform {
+public class Animal extends Lifeform {
     //private members:
     private boolean isMobile;
     private String dietType;    //non-specified type, string is easy.
@@ -18,7 +18,7 @@ public abstract class Animal extends Lifeform {
 
     //protected constructor, disable incomplete initialization
     //because getDetails() relies on all details being available
-    protected Animal(String name, String scientificName, double lifeSpan, boolean isMobile, String dietType) {
+    public Animal(String name, String scientificName, double lifeSpan, boolean isMobile, String dietType) {
         super(name, scientificName, lifeSpan);
         this.isMobile = isMobile;
         this.dietType = dietType;

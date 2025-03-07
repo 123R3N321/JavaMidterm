@@ -6,11 +6,11 @@ package PartI;
  *
  * note: all birds have spine. Go check with prof
  */
-public abstract class Bird extends Chordate {
+public class Bird extends Chordate {
     private boolean canFly; //birds may or may not fly, look at kiwi and penguin!
     private double wingSpan;
 
-    protected Bird(String name, String scientificName, double lifeSpan, boolean isMobile, String dietType, boolean vertebrate, double nervousSystemComplexity, boolean canFly, double wingSpan) {
+    public Bird(String name, String scientificName, double lifeSpan, boolean isMobile, String dietType, boolean vertebrate, double nervousSystemComplexity, boolean canFly, double wingSpan) {
         super(name, scientificName, lifeSpan, isMobile, dietType, vertebrate, nervousSystemComplexity);
         this.canFly = canFly;
         this.wingSpan = wingSpan;

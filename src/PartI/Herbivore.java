@@ -5,20 +5,20 @@
  */
 package PartI;
 
-abstract public class Herbivore extends Mammal {
+public class Herbivore extends Mammal {
     private double ruminationTime; //assumed to be double
     private String herdBehavior;   //assumed string, some kind of description
 
     //double protected constructor
     //first the version that does not set endotherm status
-    protected Herbivore(String name, String scientificName, double lifeSpan, boolean isMobile, String dietType, boolean vertebrate, double nervousSystemComplexity, double gestationPeriod, double ruminationTime, String herdBehavior) {
+    public Herbivore(String name, String scientificName, double lifeSpan, boolean isMobile, String dietType, boolean vertebrate, double nervousSystemComplexity, double gestationPeriod, double ruminationTime, String herdBehavior) {
         super(name, scientificName, lifeSpan, isMobile, dietType, vertebrate, nervousSystemComplexity, gestationPeriod);
         this.ruminationTime = ruminationTime;
         this.herdBehavior = herdBehavior;
     }
 
     //then the constructor that adjusts endotherm/ectotherm
-    protected Herbivore(String name, String scientificName, double lifeSpan, boolean isMobile, String dietType, boolean vertebrate, double nervousSystemComplexity, double gestationPeriod, double ruminationTime, String herdBehavior,boolean warmBlood) {
+    public Herbivore(String name, String scientificName, double lifeSpan, boolean isMobile, String dietType, boolean vertebrate, double nervousSystemComplexity, double gestationPeriod, double ruminationTime, String herdBehavior,boolean warmBlood) {
         super(name, scientificName, lifeSpan, isMobile, dietType, vertebrate, nervousSystemComplexity, gestationPeriod, warmBlood);
         this.ruminationTime = ruminationTime;
         this.herdBehavior = herdBehavior;

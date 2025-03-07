@@ -8,19 +8,19 @@ package PartI;
  * <p>
  * and now we have double-super constructor calls!
  */
-abstract public class Insect extends Arthropod {
+public class Insect extends Arthropod {
     private int wingCount;  //the number of wings is discrete!
     private String metamorphosisStage;  //assumed to be the name/description of the stage
 
     //first, assumed exoskeleton constructor
-    protected Insect(String name, String scientificName, double lifeSpan, boolean isMobile, String dietType, int legCount, int wingCount, String metamorphosisStage) {
+    public Insect(String name, String scientificName, double lifeSpan, boolean isMobile, String dietType, int legCount, int wingCount, String metamorphosisStage) {
         super(name, scientificName, lifeSpan, isMobile, dietType, legCount);
         this.wingCount = wingCount;
         this.metamorphosisStage = metamorphosisStage;
     }
     //next, the overloaded constructor that allows exo to be missing
     //note that we just call the other constructor and not setter!
-    protected Insect(String name, String scientificName, double lifeSpan, boolean isMobile, String dietType, int legCount, boolean exoskeleton, int wingCount, String metamorphosisStage) {
+    public Insect(String name, String scientificName, double lifeSpan, boolean isMobile, String dietType, int legCount, boolean exoskeleton, int wingCount, String metamorphosisStage) {
         super(name, scientificName, lifeSpan, isMobile, dietType, legCount, exoskeleton);
         this.wingCount = wingCount;
         this.metamorphosisStage = metamorphosisStage;

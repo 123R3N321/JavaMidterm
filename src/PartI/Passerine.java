@@ -6,11 +6,11 @@
  */
 package PartI;
 
-public abstract class Passerine extends Bird{
+public class Passerine extends Bird{
     private double songComplexity;
     private String beakType;
 
-    protected Passerine(String name, String scientificName, double lifeSpan, boolean isMobile, String dietType, boolean vertebrate, double nervousSystemComplexity, boolean canFly, double wingSpan, double songComplexity, String beakType) {
+    public Passerine(String name, String scientificName, double lifeSpan, boolean isMobile, String dietType, boolean vertebrate, double nervousSystemComplexity, boolean canFly, double wingSpan, double songComplexity, String beakType) {
         super(name, scientificName, lifeSpan, isMobile, dietType, vertebrate, nervousSystemComplexity, canFly, wingSpan);
         this.songComplexity = songComplexity;
         this.beakType = beakType;

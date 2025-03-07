@@ -9,7 +9,7 @@ import PartI.Animal;
  * exoskeleton (assumed to be bool default true, as all arthropods indeed have an armor)
  * legCount (has to be int then.)
  */
-public abstract class Arthropod extends Animal {
+public class Arthropod extends Animal {
 
     //private
     private boolean exoskeleton = true;
@@ -18,13 +18,13 @@ public abstract class Arthropod extends Animal {
 
     //protected constructor
     //default do not change exoskeleton status
-    protected Arthropod(String name, String scientificName, double lifeSpan, boolean isMobile, String dietType, int legCount) {
+    public Arthropod(String name, String scientificName, double lifeSpan, boolean isMobile, String dietType, int legCount) {
         super(name, scientificName, lifeSpan, isMobile, dietType);
         this.legCount = legCount;
     }
 
     //overload to allow exoskeleton to be missing
-    protected Arthropod(String name, String scientificName, double lifeSpan, boolean isMobile, String dietType, int legCount, boolean exoskeleton) {
+    public Arthropod(String name, String scientificName, double lifeSpan, boolean isMobile, String dietType, int legCount, boolean exoskeleton) {
         this(name, scientificName, lifeSpan, isMobile, dietType, legCount);
         this.exoskeleton = exoskeleton;
     }

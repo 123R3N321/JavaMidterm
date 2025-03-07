@@ -1,17 +1,17 @@
 package PartI;
 
-public abstract class Mammal extends Chordate {
+public class Mammal extends Chordate {
     private boolean warmBlood = true;
     private double gestationPeriod;
 
     //barebone constructor reuqirements excludes endortherm bool switch
-    protected Mammal(String name, String scientificName, double lifeSpan, boolean isMobile, String dietType, boolean vertebrate, double nervousSystemComplexity, double gestationPeriod) {
+    public Mammal(String name, String scientificName, double lifeSpan, boolean isMobile, String dietType, boolean vertebrate, double nervousSystemComplexity, double gestationPeriod) {
         super(name, scientificName, lifeSpan, isMobile, dietType, vertebrate, nervousSystemComplexity);
         this.gestationPeriod = gestationPeriod;
     }
 
     //full-fledged constructor in case user changes the warm blooded status to false (I don see why but, whatev)
-    protected Mammal(String name, String scientificName, double lifeSpan, boolean isMobile, String dietType, boolean vertebrate, double nervousSystemComplexity, double gestationPeriod, boolean warmBlood) {
+    public Mammal(String name, String scientificName, double lifeSpan, boolean isMobile, String dietType, boolean vertebrate, double nervousSystemComplexity, double gestationPeriod, boolean warmBlood) {
         this(name, scientificName, lifeSpan, isMobile, dietType, vertebrate, nervousSystemComplexity, gestationPeriod);
         this.warmBlood = warmBlood;
     }

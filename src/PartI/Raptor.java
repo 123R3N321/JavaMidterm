@@ -6,11 +6,11 @@
  */
 package PartI;
 
-public abstract class Raptor extends Bird{
+public class Raptor extends Bird{
     private double talonStrength;
     private double visionRange;
 
-    protected Raptor(String name, String scientificName, double lifeSpan, boolean isMobile, String dietType, boolean vertebrate, double nervousSystemComplexity, boolean canFly, double wingSpan, double talonStrength, double visionRange) {
+    public Raptor(String name, String scientificName, double lifeSpan, boolean isMobile, String dietType, boolean vertebrate, double nervousSystemComplexity, boolean canFly, double wingSpan, double talonStrength, double visionRange) {
         super(name, scientificName, lifeSpan, isMobile, dietType, vertebrate, nervousSystemComplexity, canFly, wingSpan);
         this.talonStrength = talonStrength;
         this.visionRange = visionRange;
