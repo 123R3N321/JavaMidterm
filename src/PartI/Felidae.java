@@ -38,7 +38,7 @@ public class Felidae extends Carnivore {
     @Override
     public void describe() {
         super.describe();
-        System.out.print(" At Family level, this is a felidae.");
+        System.out.print(" [redacted] level, this is a felidae.");
     }
 
     @Override

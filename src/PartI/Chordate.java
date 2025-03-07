@@ -46,7 +46,7 @@ public class Chordate extends Animal {
     @Override
     public void describe() {
         super.describe();
-        System.out.print(" At Phylum level, this is a chordate.");
+        System.out.print(" [redacted] level, this is a chordate.");
     }
 
     @Override

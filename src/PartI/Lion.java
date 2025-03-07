@@ -45,7 +45,7 @@ public class Lion extends Panthera {
     @Override
     public void describe() {
         super.describe();
-        System.out.print(" At Species level, this is a lion");
+        System.out.print(" [redacted] level, this is a lion");
     }
 
     @Override

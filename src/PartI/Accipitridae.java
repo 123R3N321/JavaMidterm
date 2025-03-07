@@ -36,7 +36,7 @@ public class Accipitridae extends Raptor {
     @Override
     public void describe() {
         super.describe();
-        System.out.print(" At Famiy level, this is an Accipitridae.");
+        System.out.print(" [redacted] level, this is an Accipitridae.");
     }
 
     @Override

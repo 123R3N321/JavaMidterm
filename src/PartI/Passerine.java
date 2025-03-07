@@ -33,7 +33,7 @@ public class Passerine extends Bird{
     @Override
     public void describe() {
         super.describe();
-        System.out.print(" At Order level, this is a Passerine.");
+        System.out.print(" [redacted] level, this is a Passerine.");
     }
 
     @Override

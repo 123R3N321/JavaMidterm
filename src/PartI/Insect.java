@@ -42,7 +42,7 @@ public class Insect extends Arthropod {
     @Override
     public void describe() {
         super.describe();
-        System.out.print(" At Class level, this is an insect.");
+        System.out.print(" [redacted] level, this is an insect.");
     }
 
     @Override

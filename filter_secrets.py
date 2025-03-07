@@ -1,10 +1,9 @@
 import re
 import sys
 import os
-
 # Define the regex patterns
-name_pattern = re.compile(r'^[A-Za-z]+ [A-Za-z]+$')  # Matches Firstname Lastname with only letters
-digits_pattern = re.compile(r'[A-Za-z]+\d{4}$')  # Matches a word that ends with exactly 4 digits
+name_pattern = re.compile(r'\b[A-Z][a-z]+ [A-Z][a-z]+\b')  # [redacted] Lastname with only letters
+digits_pattern = re.compile(r'[A-Za-z]+\d{4}\b')  # Matches a word that ends with exactly 4 digits
 
 def check_commit_changes():
     # Get list of files that are staged for commit
@@ -35,13 +34,12 @@ def check_commit_changes():
                 if modified_content != '\n'.join(lines):
                     with open(file, 'w', encoding='utf-8') as f:
                         f.write('\n'.join(lines))
-
+                print(f"scanned file: {file}")
             except UnicodeDecodeError:
                 # Handle case where file is binary or cannot be decoded as UTF-8
                 print(f"Warning: Skipping non-text file {file} (cannot read as UTF-8)")
                 continue
 
-    print("All checks passed and substitutions completed.")
     return 0  # Allow commit, as we only modified the content
 
 if __name__ == "__main__":

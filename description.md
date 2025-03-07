@@ -1,36 +1,36 @@
 CSXXXX Intr0ducti0n t0 J4v4
-Midterm Coding Section
+[redacted] Section
 Professor D.C
 February 27th, 2025
-Due Date: March 6th, 2025 11:59PM
+[redacted]: March 6th, 2025 11:59PM
 
 Part I:
 
 You are going to take this class hierarchy structure and implement it.
 
-1. Abstract Base Class
+1. [redacted] Class
    • Lifeform (abstract)
    ◦ Common attributes: name, scientificName, lifespan
    ◦ Abstract method: describe()
    ◦ Concrete method: getDetails()
-2. Kingdom Level
+2. [redacted]
    • Animal (extends Lifeform)
    ◦ Adds isMobile, dietType
    • Plant (extends Lifeform)
    ◦ Adds photosynthesisEfficiency, growthRate
-3. Phylum Level
+3. [redacted]
    • Chordate (extends Animal)
    ◦ Adds vertebrate, nervousSystemComplexity
    • Arthropod (extends Animal)
    ◦ Adds exoskeleton, legCount
-4. Class Level
+4. [redacted]
    • Mammal (extends Chordate)
    ◦ Adds warmBlooded, gestationPeriod
    • Bird (extends Chordate)
    ◦ Adds wingSpan, canFly
    • Insect (extends Arthropod)
    ◦ Adds wingCount, metamorphosisStage
-5. Order Level
+5. [redacted]
    • Carnivore (extends Mammal)
    ◦ Adds huntingStrategy, biteForce
    • Herbivore (extends Mammal)
@@ -39,19 +39,19 @@ You are going to take this class hierarchy structure and implement it.
    ◦ Adds talonStrength, visionRange
    • Passerine (extends Bird)
    ◦ Adds songComplexity, beakType
-6. Family Level
+6. [redacted]
    • Felidae (extends Carnivore)
    ◦ Adds climbingAbility, roarVolume
    • Canidae (extends Carnivore)
    ◦ Adds packInstinct, olfactorySensitivity
    • Accipitridae (extends Raptor)
    ◦ Adds predationSuccessRate, wingLoading
-7. Genus Level
+7. [redacted]
    • Panthera (extends Felidae)
    ◦ Adds territorySize, maneSize
    • Canis (extends Canidae)
    ◦ Adds howlLoudness, endurance
-8. Species Level
+8. [redacted]
    • Lion (extends Panthera)
    ◦ Adds prideSize, maneColor
    • Wolf (extends Canis)
@@ -87,6 +87,3 @@ You will read in the file Hadoop_2k.log and output to two files, one for Warn en
 Hints:
 
 Methods like String.split(), String.contains(), java.util.regex.Matcher, and java.util.regex.Pattern could be your friends for this. Look them up and see how they may be useful for this. Dates can be parsed with SimpleDateFormat is good for parsing strings into Date objects and serializing Date objects into formatted Strings. 
-
-
-

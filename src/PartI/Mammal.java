@@ -36,7 +36,7 @@ public class Mammal extends Chordate {
     @Override
     public void describe() {
         super.describe();
-        System.out.print(" At Class level, this is a mammal.");
+        System.out.print(" [redacted] level, this is a mammal.");
     }
 
     @Override

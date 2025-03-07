@@ -43,7 +43,7 @@ public class Canis extends Canidae {
     @Override
     public void describe() {
         super.describe();
-        System.out.print(" At Genus level, this is a canis.");
+        System.out.print(" [redacted] level, this is a canis.");
     }
 
     @Override

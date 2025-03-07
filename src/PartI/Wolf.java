@@ -43,7 +43,7 @@ public class Wolf extends Canis {
     @Override
     public void describe() {
         super.describe();
-        System.out.print(" At Species level, this is a wolf.");
+        System.out.print(" [redacted] level, this is a wolf.");
     }
 
     @Override

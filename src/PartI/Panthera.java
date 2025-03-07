@@ -45,7 +45,7 @@ public class Panthera extends Felidae {
     @Override
     public void describe() {
         super.describe();
-        System.out.print(" At Genus level, this is a Panthera");
+        System.out.print(" [redacted] level, this is a Panthera");
     }
 
     @Override

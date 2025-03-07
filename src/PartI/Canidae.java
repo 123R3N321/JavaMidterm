@@ -43,7 +43,7 @@ public class Canidae extends Carnivore {
     @Override
     public void describe() {
         super.describe();
-        System.out.print(" At Family level, this is a canidae.");
+        System.out.print(" [redacted] level, this is a canidae.");
     }
 
     @Override

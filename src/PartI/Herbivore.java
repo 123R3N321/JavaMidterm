@@ -41,7 +41,7 @@ public class Herbivore extends Mammal {
     @Override
     public void describe() {
         super.describe();
-        System.out.print(" At Order level, this is a herbivore.");
+        System.out.print(" [redacted] level, this is a herbivore.");
     }
 
     @Override

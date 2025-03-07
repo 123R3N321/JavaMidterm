@@ -1,5 +1,5 @@
 # This is the midterm for the grad ver of Intro to Java
-### Taught by prof D. C. (AKA Prof Gui Sida)
+### Taught by prof D. C. (AKA Gui-Sida)
 
 - partI is useless.
 - partII is quite useful and fun to write.

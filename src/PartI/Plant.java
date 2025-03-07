@@ -50,7 +50,7 @@ public class Plant extends Lifeform {
     //snow-balling methods
     @Override
     public void describe() {
-        System.out.print("At Kingdom level, this plant is called" + getName() +
+        System.out.print("[redacted] level, this plant is called" + getName() +
                 ", " +
                 ", with scientific name " +
                 getScientificName());//simply print more after this

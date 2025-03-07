@@ -53,7 +53,7 @@ public class Arthropod extends Animal {
     @Override
     public void describe() {
         super.describe();
-        System.out.print(" At Phylum level, this is an Arthropod.");
+        System.out.print(" [redacted] level, this is an Arthropod.");
     }
 
     @Override
